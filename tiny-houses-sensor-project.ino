@@ -47,32 +47,32 @@ void setup() {
 void loop() {
   // Read and print out the temperature, then convert to *F
   float c = tempsensor1.readTempC();
-  float f = c * 9.0 / 5.0 + 32;
-  Serial.print("Temp 1: "); Serial.print(c); Serial.print("*C\t"); 
-  Serial.print(f); Serial.println("*F");
+//  float f = c * 9.0 / 5.0 + 32;
+  Serial.print("Temp 1: "); Serial.print(c); Serial.println("*C\t"); 
+//  Serial.print(f); Serial.println("*F");
   
   c = tempsensor2.readTempC();
-  f = c * 9.0 / 5.0 + 32;
-  Serial.print("Temp 2: "); Serial.print(c); Serial.print("*C\t"); 
-  Serial.print(f); Serial.println("*F");
+//  f = c * 9.0 / 5.0 + 32;
+  Serial.print("Temp 2: "); Serial.print(c); Serial.println("*C\t"); 
+//  Serial.print(f); Serial.println("*F");
   
   wptempsensor1.requestTemperatures();
-  Serial.print("Temperature for Device 1 is: ");
+  Serial.print("Waterproof Temp 1: ");
   Serial.print(wptempsensor1.getTempCByIndex(0));
   Serial.println("*C");
   
   wptempsensor2.requestTemperatures();
-  Serial.print("Temperature for Device 1 is: ");
+  Serial.print("Waterproof Temp 2: ");
   Serial.print(wptempsensor2.getTempCByIndex(0));
   Serial.println("*C");
   
   wptempsensor3.requestTemperatures();
-  Serial.print("Temperature for Device 1 is: ");
+  Serial.print("Waterproof Temp 3: ");
   Serial.print(wptempsensor3.getTempCByIndex(0));
   Serial.println("*C");
   
   wptempsensor4.requestTemperatures();
-  Serial.print("Temperature for Device 1 is: ");
+  Serial.print("Waterproof Temp 4: ");
   Serial.print(wptempsensor4.getTempCByIndex(0));
   Serial.println("*C");
   
